@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>SPLI<br>TTER</h1>
+
+  <main>
+
+    <p>Bill</p>
+    <input type="number" id="bill">
+
+    <p>Select Tip %</p>
+    <div class="tipChoice">
+
+      <button id="five" >5%</button>
+      <button id="ten" >10%</button>
+      <button id="fifteen" >15%</button>
+      <button id="twenty-five" >25%</button>
+      <button id="fifty" >50%</button>
+      <input type="number" id="custom" placeholder="Custom">
+
+    </div>
+    
+    <p>Number of People</p>
+    <input type="number" id="people">
+
+    <div class="resultContainer">
+
+      <div class="tipPerPerson">
+        <div class="leftSideAmount">
+          <p>Tip Amount</p>
+          <span>/ person</span>
+        </div>
+
+        <div class="rightSideAmount">
+          <span id="TipPerPersonAmount"></span>
+        </div>
+      </div>
+
+      <div class="total">
+        <div class="leftSideTotal">
+          <p>Total</p>
+          <span>/ person</span>
+        </div>
+
+        <div class="rightSideTotal">
+          <span id="totalTip" ></span>
+        </div>
+      </div>
+
+      <button id="reset">RESET</button>
+
+    </div>
+
+  </main>
+ 
+
+
+
+
+  <script src="./index.js"></script>
+
+</body>
+</html>
