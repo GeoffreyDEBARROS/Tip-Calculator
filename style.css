@@ -10,20 +10,19 @@ body {
     height: 100vh;
 }
 h1 {
-    font-size: 1.8rem;
-    letter-spacing: 5px;
+    font-size: 1.7rem;
+    letter-spacing: 7px;
     color: hsl(186, 14%, 43%);
     text-align: center;
     margin: 30px;
 }
 main {
     background: hsl(0, 0%, 100%);
-    height: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px 20px 0 0;
     padding: 30px;
 }
 p {
-    color: hsl(184, 14%, 56%);
+    color: hsl(183, 100%, 15%);
 }
 input {
     border: none;
@@ -40,10 +39,10 @@ input {
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 15px;
 }
-.tipChoice button {
+button {
     border: none;
     background: hsl(183, 100%, 15%);
-    border-radius: 8px;
+    border-radius: 6px;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
@@ -70,6 +69,34 @@ input {
     padding: 30px 20px;
     margin: 30px 0;
 }
+.tipPerPerson ,.total{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.total {
+    padding-top: 20px;
+}
+.rightSideAmount, .rightSideTotal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#TipPerPersonAmount ,#totalTip {
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+}
 .resultContainer p {
     color: hsl(189, 41%, 97%);
+}
+
+.resultContainer span {
+    font-size: 0.8rem;
+    color: hsl(184, 14%, 56%);;
+}
+#reset {
+    background: hsl(172, 67%, 45%);
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    color: hsl(183, 100%, 15%);
 }
