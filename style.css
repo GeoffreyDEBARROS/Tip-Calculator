@@ -6,15 +6,16 @@
 }
 body {
     font-family: 'Space Mono', monospace;
-    background: hsl(185, 41%, 84%);
+    background: hsl(0, 0%, 100%);
     height: 100vh;
+    transition: 1s;
 }
 h1 {
     font-size: 1.7rem;
-    letter-spacing: 7px;
     color: hsl(186, 14%, 43%);
     text-align: center;
     margin: 30px;
+    transition: 1s;
 }
 main {
     background: hsl(0, 0%, 100%);
@@ -31,6 +32,15 @@ input {
     width: 100%;
     margin: 5px 0;
     border-radius: 5px;
+    text-align: right;
+    padding: 7px 13px;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+}
+input:focus {
+    outline: none;
+    border: 2px solid hsl(172, 67%, 45%);
 }
 .tipChoice {
     padding: 10px 0;
@@ -47,6 +57,13 @@ button {
     font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: 0.8s;
+}
+button:active {
+    transform: scale(0.95);
+}
+button:focus {
+    background: hsl(172, 67%, 45%);
 }
 #custom {
     background: hsl(183, 100%, 15%);
@@ -56,11 +73,13 @@ button {
     text-align: center;
     font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
-    color: hsl(0, 0%, 100%);
+    color: hsl(183, 100%, 15%);
     background: hsl(189, 41%, 97%);
     cursor: pointer;
+    text-align: right;
 }
 #custom::placeholder {
+    text-align: center;
     color: hsl(184, 14%, 56%);
 }
 .resultContainer {
