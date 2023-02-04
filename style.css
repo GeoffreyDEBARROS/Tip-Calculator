@@ -100,7 +100,7 @@ button:focus {
     align-items: center;
     justify-content: flex-end;
 }
-#TipPerPersonAmount ,#totalTip {
+#TipPerPersonAmount ,#totalBillPerPerson {
     font-size: 2rem;
     color: hsl(172, 67%, 45%);
 }
